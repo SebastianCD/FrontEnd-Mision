@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+      <div id="pokedex-container">
+        <div id="pokedex">
+          <div id="pokedex-left">
+          <div>
+            <div id="circle1">
+              <div id="light-circle1"></div>
+            </div>
+          </div>
+          <div id="screen-row">
+            <div id="screen-border">
+              <div id="screen">
+                <div id="picture-row">
+                  <img id="pokeImg" src=https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/0.png>
+                </div>
+                <div id="screen-row-info">
+                  <div id="pokeId">000 - Undefined</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="name-row">
+            <div id="name-container">
+              <input type="text" placeholder="Pokémon" id="pokeName" name="pokeName">
+              <button id="circleB" onclick="fetchPokemon()">
+                <div id="light-circle1"></div>
+              </button>
+              <div id="arrows-container">
+                <div id="cross">
+              <div id="leftcross">
+                <div id="leftT"></div>
+              </div>
+              <div id="topcross">
+                <div id="upT"></div>
+              </div>
+              <div id="rightcross">
+                <div id="rightT"></div>
+              </div>
+              <div id="midcross">
+                <div id="midCircle"></div>
+              </div>
+              <div id="botcross">
+                <div id="downT"></div>
+              </div>
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div id="pokedex-right">
+            <div id="screen-description-row">
+              <div id="screen-description"><p id = "desc">Ingresa el nombre de tu Pokémon.</p><br>
+                <p id = "peso"></p>
+                <p id = "altura"></p>
+                <div class = "progressBar">
+                    <label for="hp">HP:</label>
+                    <progress id="hp" value="0" max="255"></progress><br>
+                    <label for="attack">AT:</label>
+                    <progress id="attack" value="0" max="190"></progress><br>
+                    <label for="defense">DE:</label>
+                    <progress id="defense" value="0" max="230"></progress><br>
+                    <label for="sa">SA:</label>
+                    <progress id="sa" value="0" max="194"></progress><br>
+                    <label for="sd">SD:</label>
+                    <progress id="sd" value="0" max="230"></progress><br>
+                    <label for="speed">SP:</label>
+                    <progress id="speed" value="0" max="180"></progress><br>
+                </div>
+            </div>
+
+            </div>
+            <div id="numbers-buttons-row">
+              <div class="number-button"></div>
+              <div class="number-button"></div>
+              <div class="number-button"></div>
+              <div class="number-button"></div>
+              <div class="number-button"></div>
+              <div class="number-button"></div>
+              <div class="number-button"></div>
+              <div class="number-button"></div>
+            </div>
+
+            <div id="types-row">
+              <div id="types-container">
+                <div id="type-box">
+                  <img src = 'https://cdn2.bulbagarden.net/upload/3/3c/UnknownIC_Big.png'; id="type1" class="type-pokemon">
+                </div>
+                <div id="type-box">
+                  <img src = 'https://cdn2.bulbagarden.net/upload/3/3c/UnknownIC_Big.png'; id="type2" class="type-pokemon">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
